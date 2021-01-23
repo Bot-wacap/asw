@@ -1076,7 +1076,7 @@ client.on('group-participants-update', async (anu) => {
 							.on('end', function () {
 								console.log('Finish')
 								buff = fs.readFileSync(ran)
-								client.sendMessage(from, buff, sticker, cr, {quoted: mek})
+								client.sendMessage(from, buff, sticker, {quoted: mek})
 								fs.unlinkSync(media)
 								fs.unlinkSync(ran)
 							})
@@ -1102,7 +1102,7 @@ client.on('group-participants-update', async (anu) => {
 							.on('end', function () {
 								console.log('Finish')
 								buff = fs.readFileSync(ran)
-								client.sendMessage(from, buff, sticker, cr, {quoted: mek})
+								client.sendMessage(from, buff, sticker, {quoted: mek})
 								fs.unlinkSync(media)
 								fs.unlinkSync(ran)
 							})
