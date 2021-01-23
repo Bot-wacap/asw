@@ -525,9 +525,9 @@ client.on('group-participants-update', async (anu) => {
                                                 nobg = fs.readFileSync(rano)
                                                 client.sendMessage(from, nobg, sticker, {quoted: mek})
                                                 await limitAdd(sender)
-                                        })
+
                                     
-                                             } else {
+                                            } else {
                                                  reply('Gunakan foto!')
                                           }
                                              break
