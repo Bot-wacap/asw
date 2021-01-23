@@ -117,7 +117,7 @@ exports.reglevelahf = (command, pushname, getLevelingLevel, sender, ahf) => {
 exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, time, reqXp, _registered, uangku) => { 
 	return `
 ╭══─⊱ ❰ *ABOUT USER* ❱ ⊰─══
-╠⧐ *Jam* : ${time}
+╠⧐ *Jam* : ${time}\n\n
 ╠⧐ *Nama* : ${pushname}
 ╠⧐ *Nomer* : wa.me/${sender.split("@")[0]}
 ╠⧐ *Uang mu* : Rp${uangku}
