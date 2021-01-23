@@ -23,7 +23,7 @@ exports.lvlnoon = () => {
 }
 
 exports.noregis = () => {
-	return`*「 ANDA BELUM TERDAFTAR DI DATABASE 」*\n\n*cara daftar ${prefix}daftar nama|umur* \n*contoh ${prefix}daftar Uwiw|18*`
+	return`*「 ANDA BELUM TERDAFTAR 」*\n\n*cara daftar ${prefix}daftar nama|umur* \n*contoh ${prefix}daftar Uwiw|18*`
 }
 
 exports.rediregis = () => {
