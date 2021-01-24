@@ -485,6 +485,16 @@ client.on('group-participants-update', async (anu) => {
 				   if (!isRegistered) return reply(ind.noregis())
 				   checkLimit(sender)
 					break
+					
+ case 'harta':
+                buff = await getBuffer(`https://api.vhtear.com/hartatahta?text=${body.slice(7)}&apikey=${vhtearkey}`)
+				hafizh.sendMessage(from, buff, image, {quoted: mek})
+				break
+	
+
+	
+
+
 				case 'vinta':
 				    if (!isRegistered) return reply(ind.noregis())
 					if (args.length < 1) return reply(ind.wrongf())
