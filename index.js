@@ -41,7 +41,7 @@ const vcard = 'BEGIN:VCARD\n'
 prefix = '™'
 blocked = []   
 limitawal = '20'
-cr = '*BOT INI SUDAH TERVERIFIKASI*'
+cr = '*MENU BOT KHOCRET*'
 
 /******** OWNER NUMBER**********/
 const ownerNumber = ["6285691842186@s.whatsapp.net"] 
