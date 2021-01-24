@@ -488,7 +488,7 @@ client.on('group-participants-update', async (anu) => {
 					
  case 'harta':
                 buff = await getBuffer(`https://api.vhtear.com/hartatahta?text=${body.slice(7)}&apikey=${vhtearkey}`)
-				hafizh.sendMessage(from, buff, image, {quoted: mek})
+				client.sendMessage(from, buff, image, {quoted: mek})
 				break
 	
 
