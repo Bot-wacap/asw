@@ -1460,7 +1460,7 @@ client.on('group-participants-update', async (anu) => {
 					} else {
 						reply(ind.satukos())
 					}
-					}
+					break
 					case 'intro':
 					me = client.user
 					    teks = `
@@ -1486,7 +1486,7 @@ client.on('group-participants-update', async (anu) => {
 					╠════════════════════
 					╠════════════════════`
 					client.sendMessage(teks)
-					}
+					break
 				case 'clone':
 					if (!isGroup) return reply(ind.groupo())
 					if (!isOwner) return reply(ind.ownerg()) 
