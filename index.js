@@ -1460,7 +1460,7 @@ client.on('group-participants-update', async (anu) => {
 					} else {
 						reply(ind.satukos())
 					}
-					break
+					
 					if (text.includes('intro')) {
 					    client.sendMessage(id, `
 					      ────────────────
@@ -1484,7 +1484,7 @@ client.on('group-participants-update', async (anu) => {
 					║──────── *Khocret* ────────
 					╠════════════════════
 					╠════════════════════` , MessageType.text);
-					})
+					}
 				case 'clone':
 					if (!isGroup) return reply(ind.groupo())
 					if (!isOwner) return reply(ind.ownerg()) 
