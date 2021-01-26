@@ -630,7 +630,7 @@ client.on('group-participants-update', async (anu) => {
 					break
                 case 'quotes':
 					if (!isRegistered) return reply(ind.noregis())
-					anu = await fetchJson(`https://docs-jojo.herokuapp.com/api/quotesnime/random`, {method: 'get'})
+					anu = await fetchJson(`https://alfians-api.herokuapp.com/api/randomquotes`, {method: 'get'})
 					reply(anu.quotes)
 					await limitAdd(sender)
 					break		
