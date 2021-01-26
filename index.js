@@ -758,7 +758,7 @@ client.on('group-participants-update', async (anu) => {
 					break 
                    case 'igstalk':
                    if (!isRegistered) return reply(ind.noregis())
-                     hmm = await fetchJson(`https://freerestapi.herokuapp.com/api/v1/igs?u=${body.slice(9)}`)
+                     hmm = await fetchJson(`https://alfians-api.herokuapp.com/api/stalk?username=duar_amjay`)
                      buffer = await getBuffer(hmm.data.profilehd)
                      hasil = `Fullname : ${hmm.data.fullname}\npengikut : ${hmm.data.follower}\nMengikuti : ${hmm.data.following}\nPrivate : ${hmm.data.private}\nVerified : ${hmm.data.verified}\nbio : ${hmm.data.bio}`
                     client.sendMessage(from, buffer, image, {quoted: mek, caption: hasil})
